@@ -18,7 +18,7 @@ app.get('', function(req, res) {
             if (!error) {
 
                 var $ = cheerio.load(html);
-                for(var i = 0; i <20000; i++){}
+              
                 title = $('#eow-title').text().trim();
 
                 if(checkForUrl(list, url)){
